@@ -5,9 +5,11 @@ import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.util.Base64;
+import java.util.UUID;
 
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
+import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.beans.factory.annotation.Value;
@@ -37,14 +39,14 @@ public class KeyConfig {
         RSAPublicKey publicKey = derivePublicKey(privateKey); // see helper below
         return new RSAKey.Builder(publicKey)
                 .privateKey(privateKey)
-                .keyID("auth-server-key")
+                .keyID(UUID.randomUUID().toString())
                 .build();
     }
 
     @Bean
     public JWKSource<SecurityContext> jwkSource(RSAKey rsaKey) {
         JWKSet jwkSet = new JWKSet(rsaKey);
-        return (jwkSelector, securityContext) -> jwkSelector.select(jwkSet);
+        return new ImmutableJWKSet<>(jwkSet);
     }
 
     private RSAPublicKey derivePublicKey(RSAPrivateKey privateKey) throws Exception {

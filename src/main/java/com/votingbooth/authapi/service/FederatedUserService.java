@@ -16,11 +16,11 @@ import java.util.Map;
 import java.util.UUID;
 
 @Service
-public class OAuth2UserServiceImpl implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
+public class FederatedUserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
 
     private final UserRepository userRepository;
 
-    public OAuth2UserServiceImpl(UserRepository userRepository) {
+    public FederatedUserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
