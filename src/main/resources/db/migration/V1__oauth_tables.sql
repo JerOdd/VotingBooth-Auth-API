@@ -59,11 +59,4 @@ CREATE TABLE oauth2_registered_client (
     PRIMARY KEY (id)
 );
 
-CREATE TABLE users (
-    id uuid NOT NULL,
-    email varchar(100) NOT NULL,
-    created_at timestamptz NOT NULL DEFAULT now(),
-    PRIMARY KEY (id)
-);
-
 CREATE UNIQUE INDEX idx_users_email ON users(email);

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd4cfac6-c1b7-496d-b20f-00b1fee85937" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/JpaConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/service/FederatedUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__oauth_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__oauth_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +101,13 @@
       <workItem from="1766413506991" duration="5591000" />
       <workItem from="1766861389025" duration="331000" />
       <workItem from="1766862425148" duration="1531000" />
-      <workItem from="1766867918986" duration="1431000" />
+      <workItem from="1766867918986" duration="3641000" />
+      <workItem from="1767005277897" duration="712000" />
+      <workItem from="1767020957477" duration="606000" />
+      <workItem from="1767041333225" duration="622000" />
+      <workItem from="1767091924628" duration="2231000" />
+      <workItem from="1767297337419" duration="3129000" />
+      <workItem from="1767381739094" duration="597000" />
     </task>
     <servers />
   </component>
