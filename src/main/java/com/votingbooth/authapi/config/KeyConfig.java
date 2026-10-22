@@ -15,6 +15,8 @@ import com.nimbusds.jose.proc.SecurityContext;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 
 @Configuration
 public class KeyConfig {
@@ -54,5 +56,10 @@ public class KeyConfig {
         java.security.spec.RSAPublicKeySpec publicKeySpec =
                 new java.security.spec.RSAPublicKeySpec(crtKey.getModulus(), crtKey.getPublicExponent());
         return (RSAPublicKey) KeyFactory.getInstance("RSA").generatePublic(publicKeySpec);
+    }
+
+    @Bean
+    public JwtDecoder jwtDecoder(JWKSource<SecurityContext> jwkSource) {
+        return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
     }
 }

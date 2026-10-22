@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd4cfac6-c1b7-496d-b20f-00b1fee85937" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/dataaccess/UserApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/model/UserIdentityRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/model/UserIdentityResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/service/InternalUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__oauth_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__oauth_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/AuthApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/AuthApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/api/HealthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/controller/HealthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/KeyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/KeyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/votingbooth/authapi/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__oauth_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__oauth_tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.FlywayMigrationScript" />
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,7 +56,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.AuthApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/user__api&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jeremyo/Documents/Personal/VotingBooth/Backend/auth-api&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -107,7 +115,8 @@
       <workItem from="1767041333225" duration="622000" />
       <workItem from="1767091924628" duration="2231000" />
       <workItem from="1767297337419" duration="3129000" />
-      <workItem from="1767381739094" duration="597000" />
+      <workItem from="1767381739094" duration="5400000" />
+      <workItem from="1767555570259" duration="630000" />
     </task>
     <servers />
   </component>

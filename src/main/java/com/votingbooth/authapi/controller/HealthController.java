@@ -1,4 +1,4 @@
-package com.votingbooth.authapi.api;
+package com.votingbooth.authapi.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

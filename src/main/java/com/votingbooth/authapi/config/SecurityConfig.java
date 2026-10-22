@@ -3,13 +3,14 @@ package com.votingbooth.authapi.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.MediaType;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configurers.oauth2.server.authorization.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
@@ -35,7 +36,7 @@ public class SecurityConfig {
                 .exceptionHandling(exceptions -> exceptions
                         .authenticationEntryPoint(new LoginUrlAuthenticationEntryPoint("/login"))
                 )
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt()) // if you want JWT validation for tokens
+                .oauth2ResourceServer(oauth2 -> oauth2.jwt(Customizer.withDefaults())) // if you want JWT validation for tokens
                 .apply(authorizationServerConfigurer) // still works, but you can remove if using new DSL
                 .oidc(Customizer.withDefaults()); // enable OIDC endpoints
 
